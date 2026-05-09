@@ -1212,35 +1212,35 @@
   <!-- ===================== GAME SECTION ===================== -->
   <section id="game-section">
     <div class="section-wrapper">
-      <p class="section-label reveal">Just For You, Mom</p>
-      <h2 class="section-title reveal">Play & <em>Celebrate</em></h2>
-      <p class="section-sub reveal">Three little games packed with love, flowers & sweet words.</p>
+      <p class="section-label reveal">सिर्फ आपके लिए, माँ</p>
+      <h2 class="section-title reveal">खेलें और <em>जश्न मनाना</em></h2>
+      <p class="section-sub reveal">प्यार, फूलों और मीठे शब्दों से भरे तीन छोटे खेल।</p>
 
       <div id="game-container" class="reveal">
         <div class="game-header">
           <div class="game-title-wrap">
-            <h2>🎮 Mom's Playtime</h2>
-            <p>Earn hearts by playing — then send Mom your bouquet!</p>
+            <h2>🎮 माँ का खेलने का समय</h2>
+            <p>खेलकर दिल जीतें — फिर अपनी माँ को फूलों का गुलदस्ता भेजें!</p>
           </div>
           <div class="game-stats">
             <div class="stat-box" id="score-box">
               <div class="stat-val" id="score-display">0</div>
-              <div class="stat-label">Hearts</div>
+              <div class="stat-label">दिल</div>
             </div>
             <div class="stat-box gold-box" id="level-box">
               <div class="stat-val" id="level-display">1</div>
-              <div class="stat-label">Level</div>
+              <div class="stat-label">स्तर</div>
             </div>
             <div class="stat-box purple-box">
               <div class="stat-val" id="streak-display">0</div>
-              <div class="stat-label">Streak</div>
+              <div class="stat-label">धारी</div>
             </div>
           </div>
         </div>
 
         <div class="level-bar-wrap">
           <div class="level-bar-top">
-            <span>Level <span id="lvl-txt">1</span></span>
+            <span>स्तर <span id="lvl-txt">1</span></span>
             <span id="xp-txt">0 / 20 XP</span>
           </div>
           <div class="level-bar-bg">
@@ -1249,22 +1249,23 @@
         </div>
 
         <div class="game-tabs">
-          <button class="tab-btn active" id="tab-memory" onclick="switchTab('memory')">🧠 Memory Match</button>
-          <button class="tab-btn" id="tab-word" onclick="switchTab('word')">💌 Word of Love</button>
+          <button class="tab-btn active" id="tab-memory" onclick="switchTab('memory')">🧠 मेमोरी मैच</button>
+          <button class="tab-btn" id="tab-word" onclick="switchTab('word')">💌 प्रेम के शब्द</button>
         </div>
 
         <!-- PANEL 2: MEMORY MATCH -->
         <div class="game-panel active" id="panel-memory">
           <div id="memory-game-wrap">
-            <p style="color:var(--text-mid);font-size:0.95rem;text-align:center;">Match all the pairs to earn bonus
-              hearts! 💕</p>
+            <p style="color:var(--text-mid);font-size:0.95rem;text-align:center;">सभी जोड़ियों का मिलान करके बोनस हार्ट्स अर्जित करें!सभी जोड़ियों का मिलान करके बोनस हार्ट्स अर्जित करें!
+
+ 💕</p>
             <div id="memory-grid"></div>
             <div id="mem-controls">
-              <button class="btn-outline" onclick="startMemory(4)">Easy (4×4)</button>
-              <button class="btn-outline" onclick="startMemory(5)">Medium (5×4)</button>
-              <button class="btn-outline" onclick="startMemory(6)">Hard (6×4)</button>
+              <button class="btn-outline" onclick="startMemory(4)">आसान (4×4)</button>
+              <button class="btn-outline" onclick="startMemory(5)">मध्यम (5×4)</button>
+              <button class="btn-outline" onclick="startMemory(6)">मुश्किल (6×4)</button>
             </div>
-            <p id="mem-status" style="color:var(--text-mid);font-size:0.9rem;">Choose a difficulty to start!</p>
+            <p id="mem-status" style="color:var(--text-mid);font-size:0.9rem;">शुरुआत करने के लिए कठिनाई स्तर चुनें!</p>
           </div>
         </div>
 
@@ -1272,12 +1273,12 @@
         <div class="game-panel" id="panel-word">
           <div id="word-game-wrap">
             <div class="word-progress" id="word-progress"></div>
-            <p class="word-clue" id="word-clue">Loading...</p>
+            <p class="word-clue" id="word-clue">लोड हो रहा है...</p>
             <p class="word-cat" id="word-cat"></p>
             <div class="word-blanks" id="word-blanks"></div>
             <div class="letter-choices" id="letter-choices"></div>
             <p class="word-feedback" id="word-feedback"></p>
-            <button class="btn-outline" onclick="nextWord()" id="word-next-btn" style="display:none;">Next Word
+            <button class="btn-outline" onclick="nextWord()" id="word-next-btn" style="display:none;">अगला शब्द
               ➜</button>
           </div>
         </div>
